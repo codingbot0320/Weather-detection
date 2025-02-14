@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #49bfff;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-bar {
+    width: 100%;
+    background-color: rgba(54, 54, 54, 0.5);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    background-color: #616161;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 600px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #006d82;
+    margin-right: 10px;
+}
+
+.search-container button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.search-container button:last-child {
+    background-color: #ffffff;
+}
+
+.weather-container {
+    text-align: center;
+}
+
+.weather-info h2, .weather-info p {
+    margin: 10px 0;
+}
+
+#weatherIcon img {
+    width: 100px;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.forecast-item {
+    background-color: #545454;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    background-color: rgba(54, 54, 54, 0.5);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .search-container input {
+        width: 100%;
+    }
+
+    .container {
+        width: 95%;
+        margin: 70px auto 50px;
+    }
+}
